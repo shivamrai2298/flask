@@ -1,0 +1,64 @@
+create database demo;
+
+use demo;
+CREATE TABLE IF NOT EXISTS `accounts` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `username` varchar(50) NOT NULL,
+    `password` varchar(255) NOT NULL,
+    `email` varchar(100) NOT NULL,
+    `organisation` varchar(100) NOT NULL,
+    `address` varchar(100) NOT NULL,
+    `city` varchar(100) NOT NULL,
+    `state` varchar(100) NOT NULL,
+    `country` varchar(100) NOT NULL,
+    `postalcode` varchar(100) NOT NULL,
+    PRIMARY KEY (id)
+) AUTO_INCREMENT=1;
+
+select * from accounts;
+
+CREATE TABLE IF NOT EXISTS accounts1 (
+    id int(11) NOT NULL AUTO_INCREMENT,
+    username varchar(50) NOT NULL,
+    password varchar(255) NOT NULL,
+    email varchar(100) NOT NULL,
+    PRIMARY KEY (id)
+) AUTO_INCREMENT=1;
+
+select * from accounts1;
+
+insert into accounts1 values(null,"Shivam2","rai","shivam.rai");
+
+Update accounts1 set username = "SHubham" where id = 2;
+
+create database flaskdemo;
+use flaskdemo;
+
+CREATE TABLE IF NOT EXISTS `accounts` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `username` varchar(50) NOT NULL,
+    `password` varchar(255) NOT NULL,
+    `email` varchar(100) NOT NULL,
+    `organisation` varchar(100) NOT NULL,
+    `address` varchar(100) NOT NULL,
+    `city` varchar(100) NOT NULL,
+    `state` varchar(100) NOT NULL,
+    `country` varchar(100) NOT NULL,
+    `postalcode` varchar(100) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+select * from accounts;
+
+
+
+
+
+
+
+
+
+
+
+
+
